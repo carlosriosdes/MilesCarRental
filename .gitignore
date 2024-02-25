@@ -396,3 +396,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Visual Studio 2017/2019 - .NET Framework
+bin/
+obj/
+*.suo
+*.user
+*.vs
+*.sln.docstates
+
+# Rider
+.idea/
+bin/
+obj/
