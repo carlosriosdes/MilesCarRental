@@ -34,7 +34,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
 
                     b.HasKey("IdLocalidad");
 
-                    b.ToTable("Localidad");
+                    b.ToTable("Localidades");
                 });
 
             modelBuilder.Entity("MilesCarRental.Domain.Models.Vehiculo", b =>
@@ -87,7 +87,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
 
                     b.HasIndex("VehiculoId");
 
-                    b.ToTable("VehiculoLocalidad");
+                    b.ToTable("VehiculosLocalidad");
                 });
 
             modelBuilder.Entity("MilesCarRental.Domain.Models.VehiculoLocalidad", b =>

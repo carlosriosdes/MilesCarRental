@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MilesCarRental.Infraestructure.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitalMigration : Migration
+    public partial class createDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Localidad",
+                name: "Localidades",
                 columns: table => new
                 {
                     IdLocalidad = table.Column<int>(type: "int", nullable: false)
@@ -27,7 +27,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Localidad", x => x.IdLocalidad);
+                    table.PrimaryKey("PK_Localidades", x => x.IdLocalidad);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -53,7 +53,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "VehiculoLocalidad",
+                name: "VehiculosLocalidad",
                 columns: table => new
                 {
                     VehiculoLocalidadId = table.Column<int>(type: "int", nullable: false)
@@ -64,21 +64,21 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_VehiculoLocalidad", x => x.VehiculoLocalidadId);
+                    table.PrimaryKey("PK_VehiculosLocalidad", x => x.VehiculoLocalidadId);
                     table.ForeignKey(
-                        name: "FK_VehiculoLocalidad_Localidad_LocalidadEntregaId",
+                        name: "FK_VehiculosLocalidad_Localidades_LocalidadEntregaId",
                         column: x => x.LocalidadEntregaId,
-                        principalTable: "Localidad",
+                        principalTable: "Localidades",
                         principalColumn: "IdLocalidad",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_VehiculoLocalidad_Localidad_LocalidadRecogidaId",
+                        name: "FK_VehiculosLocalidad_Localidades_LocalidadRecogidaId",
                         column: x => x.LocalidadRecogidaId,
-                        principalTable: "Localidad",
+                        principalTable: "Localidades",
                         principalColumn: "IdLocalidad",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_VehiculoLocalidad_Vehiculos_VehiculoId",
+                        name: "FK_VehiculosLocalidad_Vehiculos_VehiculoId",
                         column: x => x.VehiculoId,
                         principalTable: "Vehiculos",
                         principalColumn: "IdVehiculo",
@@ -87,18 +87,18 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_VehiculoLocalidad_LocalidadEntregaId",
-                table: "VehiculoLocalidad",
+                name: "IX_VehiculosLocalidad_LocalidadEntregaId",
+                table: "VehiculosLocalidad",
                 column: "LocalidadEntregaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_VehiculoLocalidad_LocalidadRecogidaId",
-                table: "VehiculoLocalidad",
+                name: "IX_VehiculosLocalidad_LocalidadRecogidaId",
+                table: "VehiculosLocalidad",
                 column: "LocalidadRecogidaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_VehiculoLocalidad_VehiculoId",
-                table: "VehiculoLocalidad",
+                name: "IX_VehiculosLocalidad_VehiculoId",
+                table: "VehiculosLocalidad",
                 column: "VehiculoId");
         }
 
@@ -106,10 +106,10 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "VehiculoLocalidad");
+                name: "VehiculosLocalidad");
 
             migrationBuilder.DropTable(
-                name: "Localidad");
+                name: "Localidades");
 
             migrationBuilder.DropTable(
                 name: "Vehiculos");

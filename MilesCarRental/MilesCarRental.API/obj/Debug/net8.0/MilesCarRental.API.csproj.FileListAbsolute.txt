@@ -110,3 +110,4 @@ C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.API\o
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.API\obj\Debug\net8.0\MilesCarRental.API.pdb
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.API\obj\Debug\net8.0\MilesCarRental.API.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.API\obj\Debug\net8.0\ref\MilesCarRental.API.dll
+C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.API\obj\Debug\net8.0\MilesCarRental.API.sourcelink.json

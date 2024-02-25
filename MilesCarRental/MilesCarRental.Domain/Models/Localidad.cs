@@ -13,7 +13,7 @@ namespace MilesCarRental.Domain.Models
         public int IdLocalidad { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
-        public ICollection<VehiculoLocalidad> VehiculoLocalidadesRecogida { get; set; }
-        public ICollection<VehiculoLocalidad> VehiculoLocalidadesEntrega { get; set; }
+        public List<VehiculoLocalidad> VehiculoLocalidadesRecogida { get; set; }
+        public List<VehiculoLocalidad> VehiculoLocalidadesEntrega { get; set; }
     }
 }

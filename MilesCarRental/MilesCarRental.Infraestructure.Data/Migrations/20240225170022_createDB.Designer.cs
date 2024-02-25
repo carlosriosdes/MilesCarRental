@@ -10,8 +10,8 @@ using MilesCarRental.Infraestructure.Data.Context;
 namespace MilesCarRental.Infraestructure.Data.Migrations
 {
     [DbContext(typeof(VehiculosMilesCarDbContext))]
-    [Migration("20240224200357_InitalMigration")]
-    partial class InitalMigration
+    [Migration("20240225170022_createDB")]
+    partial class createDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
 
                     b.HasKey("IdLocalidad");
 
-                    b.ToTable("Localidad");
+                    b.ToTable("Localidades");
                 });
 
             modelBuilder.Entity("MilesCarRental.Domain.Models.Vehiculo", b =>
@@ -90,7 +90,7 @@ namespace MilesCarRental.Infraestructure.Data.Migrations
 
                     b.HasIndex("VehiculoId");
 
-                    b.ToTable("VehiculoLocalidad");
+                    b.ToTable("VehiculosLocalidad");
                 });
 
             modelBuilder.Entity("MilesCarRental.Domain.Models.VehiculoLocalidad", b =>

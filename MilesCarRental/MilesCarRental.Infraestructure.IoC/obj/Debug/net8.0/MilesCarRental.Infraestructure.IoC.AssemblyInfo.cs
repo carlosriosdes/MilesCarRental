@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MilesCarRental.Infraestructure.IoC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba468d81566e08dcef8c9463fe1fd5ec798275df")]
 [assembly: System.Reflection.AssemblyProductAttribute("MilesCarRental.Infraestructure.IoC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MilesCarRental.Infraestructure.IoC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

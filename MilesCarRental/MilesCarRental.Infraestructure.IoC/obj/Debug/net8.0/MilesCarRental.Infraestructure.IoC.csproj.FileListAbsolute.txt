@@ -17,3 +17,4 @@ C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Infra
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Infraestructure.IoC\obj\Debug\net8.0\refint\MilesCarRental.Infraestructure.IoC.dll
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Infraestructure.IoC\obj\Debug\net8.0\MilesCarRental.Infraestructure.IoC.pdb
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Infraestructure.IoC\obj\Debug\net8.0\ref\MilesCarRental.Infraestructure.IoC.dll
+C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Infraestructure.IoC\obj\Debug\net8.0\MilesCarRental.Infraestructure.IoC.sourcelink.json

@@ -4,6 +4,6 @@ namespace MilesCarRental.Domain.Contracts
 {
     public interface IVehiculoRepository
     {
-        IEnumerable<Vehiculo> GetVehiculos();
+        IEnumerable<ResultadoBusquedaVehiculos> GetVehiculos(int idLocalidadRecogida, int idUbicacionCliente);
     }
 }

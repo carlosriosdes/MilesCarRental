@@ -9,3 +9,4 @@ C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Domai
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Domain\obj\Debug\net8.0\refint\MilesCarRental.Domain.dll
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Domain\obj\Debug\net8.0\MilesCarRental.Domain.pdb
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Domain\obj\Debug\net8.0\ref\MilesCarRental.Domain.dll
+C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Domain\obj\Debug\net8.0\MilesCarRental.Domain.sourcelink.json

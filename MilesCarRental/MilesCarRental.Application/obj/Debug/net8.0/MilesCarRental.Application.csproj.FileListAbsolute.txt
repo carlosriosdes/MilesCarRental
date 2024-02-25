@@ -13,3 +13,4 @@ C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Appli
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Application\obj\Debug\net8.0\refint\MilesCarRental.Application.dll
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Application\obj\Debug\net8.0\MilesCarRental.Application.pdb
 C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Application\obj\Debug\net8.0\ref\MilesCarRental.Application.dll
+C:\Users\Usuario\source\repos\MilesCarRental\MilesCarRental\MilesCarRental.Application\obj\Debug\net8.0\MilesCarRental.Application.sourcelink.json

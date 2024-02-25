@@ -15,6 +15,6 @@ namespace MilesCarRental.Domain.Models
         public string Color { get; set; }
         public string Marca { get; set; }
         public string Modelo { get; set; }
-        public ICollection<VehiculoLocalidad> VehiculoLocalidades { get; set; }
+        public List<VehiculoLocalidad> VehiculoLocalidades { get; set; }
     }
 }

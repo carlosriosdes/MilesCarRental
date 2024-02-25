@@ -1,6 +1,9 @@
 ﻿using MilesCarRental.Application.Contracts;
+using MilesCarRental.Application.Utilities;
 using MilesCarRental.Application.ViewModels;
 using MilesCarRental.Domain.Contracts;
+using MilesCarRental.Domain.Models;
+using System.Net;
 
 namespace MilesCarRental.Application.Services
 {
@@ -11,12 +14,18 @@ namespace MilesCarRental.Application.Services
         {
             _vehiculoRepository = vehiculoRepository;
         }
-        public VehiculosViewModel GetVehiculos()
+        public Response<IEnumerable<ResultadoBusquedaVehiculos>> GetVehiculos(int idLocalidadRecogida, int idUbicacionCliente)
         {
-            return new VehiculosViewModel
+            try
             {
-                vehiculos = _vehiculoRepository.GetVehiculos()
-            };
+                Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.OK, ApiResponseMessages.TransactionSuccess, _vehiculoRepository.GetVehiculos(idLocalidadRecogida, idUbicacionCliente));
+                return response;
+            }
+            catch (Exception)
+            {
+                Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.InternalServerError, ApiResponseMessages.ApplicationError);
+                return response;
+            }
         }
     }
 }
