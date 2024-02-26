@@ -1,6 +1,5 @@
 ﻿using MilesCarRental.Application.Contracts;
 using MilesCarRental.Application.Utilities;
-using MilesCarRental.Application.ViewModels;
 using MilesCarRental.Domain.Contracts;
 using MilesCarRental.Domain.Models;
 using System.Net;

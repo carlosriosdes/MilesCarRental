@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MilesCarRental.Application.Contracts;
 using MilesCarRental.Application.Utilities;
-using MilesCarRental.Application.ViewModels;
 using MilesCarRental.Domain.Models;
 
 namespace MilesCarRental.API.Controllers

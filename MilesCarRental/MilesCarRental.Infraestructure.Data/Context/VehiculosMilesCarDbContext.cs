@@ -6,7 +6,6 @@ namespace MilesCarRental.Infraestructure.Data.Context
     public class VehiculosMilesCarDbContext : DbContext
     {
         public VehiculosMilesCarDbContext(DbContextOptions options) : base(options) { }
-
         public DbSet<Vehiculo> Vehiculos { get; set; }
         public DbSet<Localidad> Localidades { get; set; }
         public DbSet<VehiculoLocalidad> VehiculosLocalidad { get; set; }

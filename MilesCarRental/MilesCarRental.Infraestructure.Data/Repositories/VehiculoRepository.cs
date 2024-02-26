@@ -30,8 +30,7 @@ namespace MilesCarRental.Infraestructure.Data.Repositories
                     LocalidadRecogidaNombre = x.LocalidadRecogida.Nombre,
                     LocalidadEntregaDireccion = x.LocalidadEntrega.Direccion,
                     LocalidadEntregaNombre = x.LocalidadEntrega.Nombre
-                })
-                .ToList();
+                });
         }
     }
 }

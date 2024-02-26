@@ -11,17 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{20F1C9A7-04B5-4576-91DA-4B983D8D5A6B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E6196FCE-39C1-4CBD-99A2-D6B52E7672AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.Domain", "MilesCarRental.Domain\MilesCarRental.Domain.csproj", "{CE93586B-0AFF-4E8D-902D-FBE9D00E880F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilesCarRental.Domain", "MilesCarRental.Domain\MilesCarRental.Domain.csproj", "{CE93586B-0AFF-4E8D-902D-FBE9D00E880F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.Infraestructure.Data", "MilesCarRental.Infraestructure.Data\MilesCarRental.Infraestructure.Data.csproj", "{816D27C3-0C82-423A-A2B6-5DD07F7AA3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilesCarRental.Infraestructure.Data", "MilesCarRental.Infraestructure.Data\MilesCarRental.Infraestructure.Data.csproj", "{816D27C3-0C82-423A-A2B6-5DD07F7AA3D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.Application", "MilesCarRental.Application\MilesCarRental.Application.csproj", "{03802859-70F6-41B8-9EEC-4901925FDBC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilesCarRental.Application", "MilesCarRental.Application\MilesCarRental.Application.csproj", "{03802859-70F6-41B8-9EEC-4901925FDBC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.Infraestructure.IoC", "MilesCarRental.Infraestructure.IoC\MilesCarRental.Infraestructure.IoC.csproj", "{035AC8D1-6959-4028-92B4-EAD62BFE4E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilesCarRental.Infraestructure.IoC", "MilesCarRental.Infraestructure.IoC\MilesCarRental.Infraestructure.IoC.csproj", "{035AC8D1-6959-4028-92B4-EAD62BFE4E27}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilesCarRental.API", "MilesCarRental.API\MilesCarRental.API.csproj", "{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.API", "MilesCarRental.API\MilesCarRental.API.csproj", "{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
