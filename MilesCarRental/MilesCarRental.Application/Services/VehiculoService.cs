@@ -17,8 +17,17 @@ namespace MilesCarRental.Application.Services
         {
             try
             {
-                Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.OK, ApiResponseMessages.TransactionSuccess, _vehiculoRepository.GetVehiculos(idLocalidadRecogida, idUbicacionCliente));
-                return response;
+                IEnumerable<ResultadoBusquedaVehiculos> responseGetVehiculos = _vehiculoRepository.GetVehiculos(idLocalidadRecogida, idUbicacionCliente);
+                if (responseGetVehiculos.Any())
+                {
+                    Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.OK, ApiResponseMessages.TransactionSuccess, responseGetVehiculos);
+                    return response;
+                }
+                else
+                {
+                    Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.NoContent, ApiResponseMessages.TransactionNoContent, responseGetVehiculos);
+                    return response;
+                }
             }
             catch (Exception)
             {

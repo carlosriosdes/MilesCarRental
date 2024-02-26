@@ -16,7 +16,6 @@ var serverVersion = new MySqlServerVersion(new Version(8, 0, 36));
 builder.Services.AddDbContext<VehiculosMilesCarDbContext>(x => x.UseMySql(connectionString, serverVersion));
 
 DependencyContainer.RegisterServices(builder.Services);
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

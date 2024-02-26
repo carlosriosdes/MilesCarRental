@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MilesCarRental.API.ViewModel;
 using MilesCarRental.Application.Contracts;
 using MilesCarRental.Application.Utilities;
 using MilesCarRental.Domain.Models;
+using System.Net;
 
 namespace MilesCarRental.API.Controllers
 {
+    [ApiController]
     [Route("[controller]/[action]")]
     public class VehiculoController : ControllerBase
     {
@@ -16,10 +19,14 @@ namespace MilesCarRental.API.Controllers
         }
 
         [HttpGet()]
-        public Response<IEnumerable<ResultadoBusquedaVehiculos>> GetVehiculos(int idLocalidadRecogida, int idUbicacionCliente)
+        public Response<IEnumerable<ResultadoBusquedaVehiculos>> GetVehiculos([FromQuery] ParametrosBusqueda parametrosBusqueda)
         {
-            
-            return _vehiculoService.GetVehiculos(idLocalidadRecogida, idUbicacionCliente);
+            if (!ModelState.IsValid)
+            {
+                Response<IEnumerable<ResultadoBusquedaVehiculos>> response = new(HttpStatusCode.BadRequest, ApiResponseMessages.ParameterError);
+                return response;
+            }
+            return _vehiculoService.GetVehiculos(parametrosBusqueda.IdLocalidadRecogida, parametrosBusqueda.IdUbicacionCliente);
         }
     }
 }
