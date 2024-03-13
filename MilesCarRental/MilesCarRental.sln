@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.Infraestruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilesCarRental.API", "MilesCarRental.API\MilesCarRental.API.csproj", "{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{42FF0EB2-CF3C-41CA-BE7D-C07039B5FD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMilesCarRental", "TestMilesCarRental\TestMilesCarRental.csproj", "{16525EB7-899C-4029-992B-6AE916390D87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C340249A-D6D6-4017-A5E2-F8585FDC0B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16525EB7-899C-4029-992B-6AE916390D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16525EB7-899C-4029-992B-6AE916390D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16525EB7-899C-4029-992B-6AE916390D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16525EB7-899C-4029-992B-6AE916390D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{03802859-70F6-41B8-9EEC-4901925FDBC4} = {669C72B9-C8D3-4209-8EB9-E35A5727A19F}
 		{035AC8D1-6959-4028-92B4-EAD62BFE4E27} = {23624EC3-964F-4D82-BFE9-B6C74E41210E}
 		{C340249A-D6D6-4017-A5E2-F8585FDC0B9C} = {A1CD1AB6-8FA0-4082-A390-85547B179222}
+		{16525EB7-899C-4029-992B-6AE916390D87} = {42FF0EB2-CF3C-41CA-BE7D-C07039B5FD7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB552AFD-A13F-47E4-A8A0-C09B05B490C0}
