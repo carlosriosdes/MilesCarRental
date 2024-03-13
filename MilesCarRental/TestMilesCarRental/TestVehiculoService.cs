@@ -2,12 +2,7 @@
 using MilesCarRental.Domain.Contracts;
 using MilesCarRental.Domain.Models;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestMilesCarRental
 {
@@ -42,6 +37,7 @@ namespace TestMilesCarRental
 
             //Assert
             Assert.AreEqual(HttpStatusCode.OK, vehiculos.Codigo);
+            vehiculoRepository.Verify(a => a.GetVehiculos(idLocalidadRecogida, idUbicacionCliente));
         }
 
         [TestMethod]
@@ -58,6 +54,7 @@ namespace TestMilesCarRental
 
             //Assert
             Assert.AreEqual(HttpStatusCode.NoContent, vehiculos.Codigo);
+
         }
     }
 }
